@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+/*página index (pagina 1)*/
+body{
+    background: rgb(118,0,174);
+    background: -webkit-linear-gradient(180deg, rgba(118,0,174,1) 0%, rgba(0,29,72,1) 100%);
+    background: linear-gradient(180deg, rgba(118,0,174,1) 0%, rgba(0,29,72,1) 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    color: white;
+}
+
+.power-icon {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-top: -3%;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+input[type="text"] {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-image {
+    display: block;
+    margin: 20px auto;
+    width: 60px;
+    cursor: pointer;
+}
+
+.btn-image img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.btn-image:active img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .power-icon {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-top: -3%;
+    }
+
+    .input-container {
+        max-width: 300px;
+    }
+
+    label, input[type="text"] {
+        font-size: 15px;
+    }
+
+    
+    .btn-image {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .btn-image img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-image:active img {
+        transform: scale(1.1);
+    }
+
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: white;
+    }
+
+    .power-icon {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-top: -3%;
+    }
+
+    .input-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    label, input[type="text"] {
+        font-size: 15px;
+    }
+ 
+    .btn-image {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .btn-image img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-image:active img {
+        transform: scale(1.1);
+    }
+}
+/*FIM PAGINA UMA*/
+
+/*index2.html*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustado para ocupar a altura total da viewport */
+    width: 100%;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 60px; /* Ajustado para responsividade */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px; /* Limitar a largura máxima para melhor aparência em telas grandes */
+}
+
+.box h1 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.room {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block; /* Transformar em bloco para ocupar a largura completa */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 25px;
+    transition: background 0.3s;
+    text-decoration: none; /* Remover sublinhado do link */
+    color: white; /* Manter a cor do texto */
+}
+
+.room:hover {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .box {
+        padding: 40px;
+    }
+
+    .box h1 {
+        font-size: 36px;
+    }
+
+    .room {
+        font-size: 19px;
+    }
+}
+
+/*FIM PAGINA 2 HTML*/
+
+/*inicio pagina 3 html*/
+.body2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    background: linear-gradient(to bottom, #9125a3, #22205d);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.exit-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    max-width: 60%;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.message.gaby,
+.message.isa,
+.message.duda,
+.message.laura,
+.message.nat {
+    align-self: flex-start;
+}
+
+.message.dassa-right {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
